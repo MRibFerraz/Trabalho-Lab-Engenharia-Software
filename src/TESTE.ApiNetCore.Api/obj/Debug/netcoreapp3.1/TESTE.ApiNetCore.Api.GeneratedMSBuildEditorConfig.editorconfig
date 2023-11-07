@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = TESTE.ApiNetCore.Api
+build_property.ProjectDir = C:\Projetos\Desafio\ExemploAPINetCore\ExemploAPINetCore\src\TESTE.ApiNetCore.Api\

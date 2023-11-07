@@ -1,0 +1,5 @@
+C:\Projetos\Desafio\ExemploAPINetCore\ExemploAPINetCore\src\TESTE.ApiNetCore.Tests\obj\Debug\netcoreapp3.1\TESTE.ApiNetCore.Tests.csproj.AssemblyReference.cache
+C:\Projetos\Desafio\ExemploAPINetCore\ExemploAPINetCore\src\TESTE.ApiNetCore.Tests\obj\Debug\netcoreapp3.1\TESTE.ApiNetCore.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\Desafio\ExemploAPINetCore\ExemploAPINetCore\src\TESTE.ApiNetCore.Tests\obj\Debug\netcoreapp3.1\TESTE.ApiNetCore.Tests.AssemblyInfoInputs.cache
+C:\Projetos\Desafio\ExemploAPINetCore\ExemploAPINetCore\src\TESTE.ApiNetCore.Tests\obj\Debug\netcoreapp3.1\TESTE.ApiNetCore.Tests.AssemblyInfo.cs
+C:\Projetos\Desafio\ExemploAPINetCore\ExemploAPINetCore\src\TESTE.ApiNetCore.Tests\obj\Debug\netcoreapp3.1\TESTE.ApiNetCore.Tests.csproj.CoreCompileInputs.cache

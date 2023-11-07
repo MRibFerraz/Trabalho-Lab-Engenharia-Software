@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TESTE.ApiNetCore.Application\TESTE.ApiNetCore.Application.csproj" />
+    <ProjectReference Include="..\TESTE.ApiNetCore.Domain\TESTE.ApiNetCore.Domain.csproj" />
+    <ProjectReference Include="..\TESTE.ApiNetCore.Infrastructure\TESTE.ApiNetCore.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

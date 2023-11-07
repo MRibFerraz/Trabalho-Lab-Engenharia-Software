@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ACChwdEpkwc6fG+FZL6Azl2EvyoImbaaAfmWaQ9Yj0QtZTyUOXhzVsQtXdSqA/FA53VcTjVWGVNZxaEm9vrzqg==",
+  "success": true,
+  "projectFilePath": "C:\\Projetos\\Desafio\\ExemploAPINetCore\\ExemploAPINetCore\\src\\TESTE.ApiNetCore.Domain\\TESTE.ApiNetCore.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\424028\\.nuget\\packages\\flunt\\1.0.5\\flunt.1.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}
