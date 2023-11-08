@@ -6,7 +6,7 @@ namespace TESTE.ApiNetCore.Domain.Repositories
 {
     public interface IClienteRepository
     {
-        void Incluir(Cliente cliente);
+        void IncluirCliente(Cliente cliente);
         Cliente ObterPorId(Guid id);
         IEnumerable<Cliente> ListarTodos();
     }
