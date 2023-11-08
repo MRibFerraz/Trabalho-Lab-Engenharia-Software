@@ -52,6 +52,14 @@ A abordagem DDD foi desenvolvida baseando-se em sistemas orientados a objetos. S
 4. **Agregados:** Referem-se a coleções de entidades e objetos de valor que se unem para formar uma unidade coesa. Esses agregados possuem uma raiz, que é uma entidade, e são acessados externamente através dessa raiz.
 
 5. **Repositórios:** São responsáveis por recuperar outros objetos de domínio a partir de um banco de dados. Eles oferecem uma abstração que facilita o acesso aos dados no banco, permitindo que os desenvolvedores se concentrem nas regras do domínio, em vez de se preocuparem com os detalhes de armazenamento de dados.
+```csharp
+public Cliente ObterPorId(Guid id)
+{
+    var cliente = RepoFake.Clientes.Where(x => x.Id == id).FirstOrDefault(); // Recuperar do banco
+
+    return _mapper.Map<ClienteDbModel, Cliente>(cliente);
+}
+```
 
 ### 1.5 Camada Anticorrupção
 
