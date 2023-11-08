@@ -17,7 +17,7 @@ namespace TESTE.ApiNetCore.Infrastructure.Repositories
             _mapper = mapper;
         }
 
-        public void Incluir(Cliente cliente)
+        public void IncluirCliente(Cliente cliente)
         {
             // Persistir no banco
         }
