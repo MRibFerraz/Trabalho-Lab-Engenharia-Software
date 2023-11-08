@@ -96,3 +96,7 @@ A principal função da camada de Anticorrupção é traduzir e adaptar dados, c
 
 A camada de Anticorrupção é construída com o propósito de fornecer uma interface limpa e coerente para o domínio, permitindo que ele opere de forma independente e focada em seu próprio contexto. Além disso, essa camada ajuda a reduzir o acoplamento entre o domínio e os elementos externos, facilitando a manutenção e evolução do sistema.
 
+### 1.6 Observação final
+
+O programa exemplo usado foi fornecido por um dos membros do grupo, que utiliza esse programa como modelo em seu estágio.
+
