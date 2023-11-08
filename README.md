@@ -29,6 +29,15 @@ Para que especialistas em domínio e time de desenvolvimento trabalhem de maneir
 
 Os termos da Linguagem Ubíqua são utilizados para permitir uma comunicação eficiente entre desenvolvedores e especialistas no domínio, bem como para dar nomes a elementos do código do sistema, como classes, métodos, atributos, pacotes, módulos, tabelas de bancos de dados, rotas de APIs, entre outros.
 
+Exemplo:
+```csharp
+public void IncluirCliente(Cliente cliente)
+{
+    // Persistir no banco
+}
+```
+Nesse caso, o nome "IncluirCliente" do método comunica bem o que esse método fará.
+
 ### 1.3 Contextos Delimitados
 
 Contextos Delimitados é um outro fundamento do DDD, está relacionado ao limite conceitual, uma vez que com o tempo, sistemas de software ficam mais complexos e abrangentes, pois todo o domínio está sendo colocado no mesmo modelo. Desse modo, Contextos Delimitados busca solucionar tal cenário, dado que esse fundamento busca quebrar tais domínios complexos em domínios menores, baseados, principalmente, nas intenções de negócio.
@@ -44,8 +53,26 @@ Cada Contexto Delimitado poderá ter:
 A abordagem DDD foi desenvolvida baseando-se em sistemas orientados a objetos. Sob essa perspectiva, para criar o design desses sistemas, DDD destaca alguns tipos essenciais de elementos:
 
 1. **Entidades:** São objetos que possuem identidades distintas, como, por exemplo, um usuário em um sistema, identificado por um número único de matrícula.
+```csharp
+public Cliente(Nome nome, CPF cpf, Email email, string segmento)
+    : this(nome, cpf, email)
+{
+    AlterarSegmento(segmento);
+}
+```
 
 2. **Objetos de Valor:** São objetos caracterizados apenas pelo seu estado, não possuindo identidade única. Um exemplo seria o endereço de um usuário, que é definido pelos valores de seus atributos.
+```csharp
+public Nome(string primeiroNome, string sobrenome)
+{
+    PrimeiroNome = primeiroNome;
+    Sobrenome = sobrenome;
+}
+
+public string PrimeiroNome { get; private set; }
+public string Sobrenome { get; private set; }
+public string NomeCompleto { get { return $"{PrimeiroNome} {Sobrenome}"; } }
+```
 
 3. **Serviços:** Representam objetos dedicados a realizar operações de destaque no domínio que não se encaixam estritamente como entidades ou objetos de valor. Geralmente, eles não possuem estado e são implementados como singletons.
 
