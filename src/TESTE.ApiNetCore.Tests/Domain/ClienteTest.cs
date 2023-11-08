@@ -24,7 +24,10 @@ namespace TESTE.ApiNetCore.Tests.Domain
             var cliente = new Cliente(
                 new Nome("João", "Silva"),
                 new CPF("12345678911"),
-                new Email("joao@localiza.com"));
+                new Email("joao@
+                
+                
+                .com"));
 
             Assert.True(cliente.Valid);
         }
@@ -42,7 +45,7 @@ namespace TESTE.ApiNetCore.Tests.Domain
             var cliente = new Cliente(
                 new Nome("João", "Silva"),
                 new CPF("12345678911"),
-                new Email("joao@localiza.com"),
+                new Email("joao@company.com"),
                 segmento);
 
             Assert.True(cliente.Invalid);
@@ -62,7 +65,7 @@ namespace TESTE.ApiNetCore.Tests.Domain
             var cliente = new Cliente(
                 new Nome("João", "Silva"),
                 new CPF("12345678911"),
-                new Email("joao@localiza.com"));
+                new Email("joao@company.com"));
 
             cliente.AlterarSegmento(segmento);
 
@@ -79,7 +82,7 @@ namespace TESTE.ApiNetCore.Tests.Domain
             var cliente = new Cliente(
                 new Nome("João", "Silva"),
                 new CPF("12345678911"),
-                new Email("joao@localiza.com"));
+                new Email("joao@company.com"));
 
             cliente.AlterarSegmento(segmento);
 
@@ -94,7 +97,7 @@ namespace TESTE.ApiNetCore.Tests.Domain
             var cliente = new Cliente(
                 new Nome("João", "Silva"),
                 new CPF("12345678911"),
-                new Email("joao@localiza.com"));
+                new Email("joao@company.com"));
 
             cliente.InformarOuAlterarTelefone(new Telefone(ddd, numero));
 
@@ -107,7 +110,7 @@ namespace TESTE.ApiNetCore.Tests.Domain
             var cliente = new Cliente(
                 new Nome("João", "Silva"),
                 new CPF("12345678911"),
-                new Email("joao@localiza.com"));
+                new Email("joao@company.com"));
 
             cliente.InformarOuAlterarTelefone(null);
 
@@ -122,7 +125,7 @@ namespace TESTE.ApiNetCore.Tests.Domain
             var cliente = new Cliente(
                 new Nome("João", "Silva"),
                 new CPF("12345678911"),
-                new Email("joao@localiza.com"));
+                new Email("joao@company.com"));
 
             cliente.InformarOuAlterarTelefone(new Telefone(ddd, numero));
 
@@ -136,7 +139,7 @@ namespace TESTE.ApiNetCore.Tests.Domain
             var cliente = new Cliente(
                 new Nome("João", "Silva"),
                 new CPF("12345678911"),
-                new Email("joao@localiza.com"));
+                new Email("joao@company.com"));
 
             Assert.Equal(DateTime.Today, cliente.DataCriacao.Date);
         }
